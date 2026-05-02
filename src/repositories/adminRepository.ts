@@ -7,7 +7,7 @@ import { IadminRepository } from "./interfaces/IadminRepository";
 export default class adminRepository implements IadminRepository {
     async createBanner(bannerData: Partial<IBanner>): Promise<IBanner | null> {
         try {
-            return await Banner.create(bannerData)
+            return await Banner.create(bannerData);
         } catch (error) {
             throw error
         }

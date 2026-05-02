@@ -15,7 +15,7 @@ router.get('/fetchDoctors',adminProtect, AdminController.fetchDoctors.bind(Admin
 router.patch('/doctor/:doctorId/verify',adminProtect, AdminController.verifyDocuments.bind(AdminController))
 router.post('/createBanner',adminProtect,AdminController.createBanner.bind(AdminController))
 router.patch('/banner/:bannerId/blockUnblockBanner',adminProtect, AdminController.blockUnblockBanner.bind(AdminController))
-router.get('/fetchBanner',adminProtect, AdminController.fetchBanner.bind(AdminController))
+router.get('/fetchBanner',adminProtect, AdminController.fetchBanner.bind(AdminController));
 router.get('/bookings',adminProtect, AdminController.bookings.bind(AdminController))
 router.get('/bookingList',adminProtect, AdminController.bookingList.bind(AdminController))
 router.post('/refresh-token', refreshAdminAccessToken)

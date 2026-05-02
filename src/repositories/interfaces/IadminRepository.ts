@@ -9,6 +9,6 @@ export interface IadminRepository {
     bookings(): Promise<IBooking[] | null>
     fetchDoctors(): Promise<Doctor[] | null>
     fetchDoctor(): Promise<Doctor[]| null>
-    bookingList(page: string, date: string): Promise<{ bookings: IBooking[]; totalBookings: number; totalPages: number; } | null>
+    bookingList(page: string , date: string): Promise<{ bookings: IBooking[]; totalBookings: number; totalPages: number; } | null>
 }
 

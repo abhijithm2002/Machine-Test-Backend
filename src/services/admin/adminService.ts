@@ -21,7 +21,7 @@ export default class adminService implements IadminService {
     }
     async fetchUserList(): Promise<Patient[] | null> {
         try {
-            return await this._patientsRepository.patientFetch();
+            return await this._patientsRepository.patientFetch()
         } catch (error) {
             throw error
         }
