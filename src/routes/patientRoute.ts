@@ -17,7 +17,7 @@ router.post('/resend-otp', verificationController.resendOtp.bind(verificationCon
 router.post('/login', verificationController.patientLogin.bind(verificationController))
 router.post('/google-login', verificationController.googleLogin.bind(verificationController));
 router.post('/refresh-token', refreshAccessToken)
-router.patch('/edit-profile',protect, PatientController.editPatient.bind(PatientController))
+router.patch('/edit-profile',protect, PatientController.editPatient.bind(PatientController));
 router.get('/fetchDoctorDetails', protect, PatientController.fetchDoctorDetails.bind(PatientController))
 router.get('/fetchSlots', PatientController.fetchSlots.bind(PatientController))
 router.post('/create-payment', protect, PatientController.createPayment.bind(PatientController));

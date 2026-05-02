@@ -31,7 +31,7 @@ export default class patientService implements IpatientService {
         console.log('coming to edit patient service');
 
         try {
-            const data = await this._patientRepository.editSinglePatient(userData)
+            const data = await this._patientRepository.editSinglePatient(userData);
             console.log("updated", data)
             if (data) {
                 data.name = userData.name ?? data.name

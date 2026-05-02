@@ -52,7 +52,7 @@ export default class PatientRepository implements IpatientRepository {
     async editSinglePatient(userData: Partial<Patient>): Promise<Patient | null> {
         try {
             const response = await Patients.findOne({ email: userData.email }).exec()
-            console.log('response', response)
+            console.log('response', response);
             return response
         } catch (error) {
             throw error

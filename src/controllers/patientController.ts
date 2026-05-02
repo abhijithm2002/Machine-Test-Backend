@@ -45,7 +45,7 @@ export default class patientController implements IpatientController {
       const { name, email, photo, mobile, gender } = req.body;
       const userData = { name, email, photo, mobile, gender }
       const data = await this._patientService.editPatient(userData);
-      return res.status(200).json({ message: "Profile Updated", name, email, photo, mobile })
+      return res.status(200).json({ message: "Profile Updated", name, email, photo, mobile });
     } catch (error) {
       console.error('Error in editprofile:', error);
       res.status(500).json({ message: 'Internal Server Error' });
