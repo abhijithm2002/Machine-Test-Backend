@@ -187,7 +187,7 @@ export default class doctorRepository implements IdoctorRepository {
             console.log(walletData);
             return walletData
         } catch (error) {
-            throw error
+            throw error;
         }
     }
 

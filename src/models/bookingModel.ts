@@ -20,7 +20,7 @@ export interface IBooking extends Document {
 const bookingSchema: Schema = new Schema({
     doctorId: {
         type: Schema.Types.ObjectId,
-        ref: 'Doctors',
+        ref: 'Doctors' ,
         required: true
     },
     patientId: {

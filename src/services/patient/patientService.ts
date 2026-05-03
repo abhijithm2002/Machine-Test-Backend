@@ -88,15 +88,6 @@ export default class patientService implements IpatientService {
         }
     }
 
-    // async myBookings(patientId: string, page: number, limit: number): Promise<{ data: IBooking[]; totalCount: number }> {
-    //     console.log('Entered my bookings service');
-    //     try {
-    //         return await this._patientRepository.myBookings(patientId, page, limit);
-    //     } catch (error) {
-    //         throw error;
-    //     }
-    // }
-
 
     async cancelBooking(bookingId: string): Promise<IBooking | null> {
         try {

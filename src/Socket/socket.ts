@@ -60,7 +60,7 @@ export const initializeSocket = (server: HttpServer) => {
   socket.on("stopTyping", ({ userId, conversationId }) => {
       const receiverId = getReceiverSocketId(conversationId); 
       if (receiverId) {
-          io.to(receiverId).emit("stopTyping", { userId }); 
+          io.to(receiverId).emit("stopTyping", { userId })
       }
   });
   

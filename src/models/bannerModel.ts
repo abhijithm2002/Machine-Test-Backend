@@ -14,7 +14,7 @@ export interface IBanner extends Document {
 
 const bannerSchema: Schema = new Schema({
     title: { type: String, required: true, trim: true },
-    title2: { type: String, trim: true, default: '' },
+    title2: { type: String, trim: true, default: ''  },
     title3: { type: String, trim: true, default: '' },
     description :{ type: String, trim: true, default: '' },
     imgUrl: { type: String, required: true },

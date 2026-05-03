@@ -12,7 +12,6 @@ interface DecodedToken {
   email?: string;
 }
 
-// Ensure `User` is consistent with `Patient`
 type User = Patient;
 
 // declare global {

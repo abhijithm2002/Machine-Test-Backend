@@ -7,7 +7,7 @@ export interface IpatientController{
     fetchSlots(req: Request, res: Response, next: NextFunction): void;
     createPayment(req: Request, res: Response, next: NextFunction): void;
     verifyPayment(req: Request, res: Response, next: NextFunction): void;
-    postBooking(req: Request, res: Response, next: NextFunction): void;
+    postBooking(req: Request, res: Response, next: NextFunction): void
     fetchBookings(req: Request, res: Response, next: NextFunction): void;
     myBookings(req: Request, res: Response, next: NextFunction): void;
     cancelBooking(req: Request, res: Response, next: NextFunction): void;

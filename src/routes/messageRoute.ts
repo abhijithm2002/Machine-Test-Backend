@@ -12,6 +12,6 @@ router.post('/send/:id/:senderId',
         { name: 'voiceMessage', maxCount: 1 },
         { name: 'image', maxCount: 1 },
     ]), MessageController.sendMessage.bind(MessageController));
-router.get('/conversations', MessageController.getConversations.bind(MessageController))
+router.get('/conversations', MessageController.getConversations.bind(MessageController));
 router.post('/:id/:senderId', MessageController.getMessages.bind(MessageController))
 export const messageRoutes = router

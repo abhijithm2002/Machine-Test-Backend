@@ -18,7 +18,7 @@ router.post('/doctor-login', verificationController.doctorLogin.bind(verificatio
 router.post('/google-login', verificationController.doctorGoogleLogin.bind(verificationController))
 router.patch('/edit-profile', protectdoctor, DoctorController.editDoctor.bind(DoctorController));
 router.patch('/uploadDocuments', protectdoctor, DoctorController.uploadDocuments.bind(DoctorController))
-router.post('/updateSlots', protectdoctor, DoctorController.updateSlots.bind(DoctorController))
+router.post('/updateSlots', protectdoctor, DoctorController.updateSlots.bind(DoctorController));
 router.get('/fetchSlots', protectdoctor, DoctorController.fetchSlots.bind(DoctorController))
 router.patch('/deleteSlots', protectdoctor, DoctorController.deleteSlots.bind(DoctorController))
 router.get('/getDocuments',protectdoctor,DoctorController.fetchDocuments.bind(DoctorController))

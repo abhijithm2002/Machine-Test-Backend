@@ -51,7 +51,7 @@ export default class MessageRepository implements ImessageRepository {
 
         return newMessage;
     } catch (error) {
-        throw error;
+        throw error
     }
 }
 

@@ -185,7 +185,7 @@ export default class doctorController implements IdoctorController {
             }
         } catch (error) {
             console.log('error in delete slots', error);
-            res.status(500).json({ message: 'Internal server error' });
+            res.status(500).json({ message: 'Internal server error' })
         }
     }
 

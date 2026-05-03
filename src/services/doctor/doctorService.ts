@@ -16,7 +16,7 @@ export default class doctorService implements IdoctorService {
         try {
             return await this._doctorRepository.signupDoctor(userData)
         } catch (error) {
-            throw error
+            throw error;
         }
     }
 

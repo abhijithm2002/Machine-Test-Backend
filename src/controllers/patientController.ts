@@ -110,7 +110,7 @@ export default class patientController implements IpatientController {
       res.status(200).json({ success: true, order });
     } catch (error) {
       console.error('Error in creating order:', error);
-      res.status(500).json({ message: 'Internal Server Error' });
+      res.status(500).json({ message: 'Internal Server Error' })
     }
   }
 

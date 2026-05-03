@@ -60,7 +60,7 @@ const doctorSchema = new Schema<Doctor>({
     email: { type: String, required: true },
     name: { type: String, required: true },
     password: { type: String, default:'' },
-    expertise: { type: String, default: '' },
+    expertise: {  type: String, default: '' },
     education: { type: String, default: '' },
     dateOfBirth: { type: String, default: '' },
     languageKnown: { type: String, default: '' },

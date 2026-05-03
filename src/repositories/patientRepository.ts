@@ -107,7 +107,6 @@ export default class PatientRepository implements IpatientRepository {
 
             const booking = await Booking.create(userData);
 
-            // Create notifications
         const doctorNotificationMessage = `New booking from ${patient.name} on ${userData.date}.`;
         const patientNotificationMessage = `Reminder: Your appointment with Dr. ${doctor.name} is scheduled on ${userData.date} at ${userData.shift}.`;
 
