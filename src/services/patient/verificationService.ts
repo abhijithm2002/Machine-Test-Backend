@@ -26,7 +26,7 @@ export default class VerificationService implements IverficationService {
         },
     });
 
-    async verifyOtp(email: string, enteredOtp: string): Promise<boolean> {
+    async verifyOtp(email: string, enteredOtp: string ): Promise<boolean> {
         console.log('entered verificationservice verifyOtp');
         
         try {

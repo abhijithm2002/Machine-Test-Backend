@@ -7,7 +7,7 @@ import { Doctor } from "../models/doctorModel";
 
 
 dotenv.config({path: join('./src', './env')})
-// Define interfaces for decoded token and user
+// Define interfaces for decoded  token and user
 interface DecodedToken {
   userId?: string;
   email?: string;

@@ -17,7 +17,7 @@ interface Tokens {
 
 const generateRefreshToken = (payload: Payload): Promise<string> => {
   return new Promise((resolve, reject) => {
-    // ✅ Use plain string, TypeScript now accepts it safely
+    // ✅ Use plain string, TypeScript now accepts it  safely
     const options: jwt.SignOptions = { expiresIn: '1d' };
 
     jwt.sign(

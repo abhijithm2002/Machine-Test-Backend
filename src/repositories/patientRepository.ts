@@ -150,7 +150,7 @@ export default class PatientRepository implements IpatientRepository {
 
 
 
-    async fetchBookings(id: string, date: string): Promise<IBooking[] | null> {
+    async fetchBookings(id: string, date: string ): Promise<IBooking[] | null> {
         try {
             return await Booking.find({ doctorId: id, date: date }).exec();
         } catch (error) {

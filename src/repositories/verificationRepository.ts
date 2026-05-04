@@ -14,7 +14,7 @@ export default class verificationRepository implements IverificationRepository {
         }
     }
 
-    async verifyOtp(email: string, enteredOtp: string): Promise<boolean> {
+    async verifyOtp(email: string, enteredOtp: string ): Promise<boolean> {
         try {
             const otpRecord = await Otp.findOne({ email }).sort({ createdAt: -1 }).exec();
             console.log('otpRecord: ',otpRecord)

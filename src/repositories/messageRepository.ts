@@ -55,7 +55,7 @@ export default class MessageRepository implements ImessageRepository {
     }
 }
 
-    async conversationDoctors(id: string): Promise<Patient[] | null> {
+    async conversationDoctors(id: string ): Promise<Patient[] | null> {
         try {
           const bookings = await Booking.find({
             doctorId: id,

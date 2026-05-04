@@ -120,7 +120,6 @@ class PatientRepository {
                 yield doctor.save();
                 yield patient.save();
                 const booking = yield bookingModel_1.default.create(userData);
-                // Create notifications
                 const doctorNotificationMessage = `New booking from ${patient.name} on ${userData.date}.`;
                 const patientNotificationMessage = `Reminder: Your appointment with Dr. ${doctor.name} is scheduled on ${userData.date} at ${userData.shift}.`;
                 const doctorNotification = new notificationModel_1.default({

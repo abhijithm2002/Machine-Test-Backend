@@ -100,14 +100,6 @@ class patientService {
             }
         });
     }
-    // async myBookings(patientId: string, page: number, limit: number): Promise<{ data: IBooking[]; totalCount: number }> {
-    //     console.log('Entered my bookings service');
-    //     try {
-    //         return await this._patientRepository.myBookings(patientId, page, limit);
-    //     } catch (error) {
-    //         throw error;
-    //     }
-    // }
     cancelBooking(bookingId) {
         return __awaiter(this, void 0, void 0, function* () {
             try {

@@ -97,7 +97,7 @@ export default class patientService implements IpatientService {
         }
     }
 
-    async getWalletHistory(patientId: string): Promise<Patient | null> {
+    async getWalletHistory(patientId: string ): Promise<Patient | null> {
         try {
             return await this._patientRepository.getWalletHistory(patientId)
         } catch (error) {

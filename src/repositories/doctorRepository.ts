@@ -181,7 +181,7 @@ export default class doctorRepository implements IdoctorRepository {
         }
     }
 
-    async getWalletHistory(doctorId: string): Promise<Doctor | null> {
+    async getWalletHistory(doctorId: string ): Promise<Doctor | null> {
         try {
             const walletData = await Doctors.findById(doctorId).select('WalletHistory Wallet').sort({date: -1})
             console.log(walletData);

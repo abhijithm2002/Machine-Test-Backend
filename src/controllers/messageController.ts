@@ -17,7 +17,7 @@ export default class messageController implements ImessageController {
             const { message, senderName } = req.body;
             console.log('sendername .....', senderName)
             const { id, senderId } = req.params;
-            console.log("message", message)
+            // console.log("message", message)
             console.log("id", id)
             console.log("senderid", senderId)
             const files = req.files as { [fieldname: string]: Express.Multer.File[] };

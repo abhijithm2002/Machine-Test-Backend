@@ -20,7 +20,7 @@ export default class doctorService implements IdoctorService {
         }
     }
 
-    async editDoctor(doctorData: Partial<Doctor>): Promise<Doctor | null> {
+    async editDoctor(doctorData: Partial<Doctor> ): Promise<Doctor | null> {
         try {
             const updatedDoctor = await this._doctorRepository.editSingleDoctor(doctorData);
             return updatedDoctor || null;

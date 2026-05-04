@@ -6,7 +6,7 @@ import { join } from 'path';
 
 dotenv.config({ path: join('./src', '.env') });
 
-// Define interfaces for decoded token and user
+// Define interfaces for  decoded token and user
 interface DecodedToken {
   userId?: string;
   email?: string;

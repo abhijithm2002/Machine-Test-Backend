@@ -251,7 +251,7 @@ export default class VerificationController implements IverificationController {
                 doctor = await this._doctorService.signupDoctor(newUser)
             }
             //@ts-ignore
-            const { _id, photo, is_blocked } = doctor;
+            const { _id , photo, is_blocked } = doctor;
             if (is_blocked) {
                 return res.status(403).json({ message: 'Doctor is blocked' });
             }

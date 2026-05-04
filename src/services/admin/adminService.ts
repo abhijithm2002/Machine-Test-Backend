@@ -19,7 +19,7 @@ export default class adminService implements IadminService {
         this._doctorRepository = new doctorRepository
         this._adminRepository = new adminRepository
     }
-    async fetchUserList(): Promise<Patient[] | null> {
+    async fetchUserList(): Promise<Patient[] | null>  {
         try {
             return await this._patientsRepository.patientFetch()
         } catch (error) {
@@ -27,7 +27,7 @@ export default class adminService implements IadminService {
         }
     }
 
-    async blockUnblockPatient(id: string, status: boolean) {
+    async blockUnblockPatient(id: string, status: boolean ) {
         console.log('service block admin')
         try {
             const data = await this._patientsRepository.fetchPatient(id);

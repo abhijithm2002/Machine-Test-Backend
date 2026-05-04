@@ -18,7 +18,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-const server = createServer(app); // HTTP server setup
+const server = createServer(app); 
 
 const corsOptions = {
   origin: ['https://doc-now-client.vercel.app','http://localhost:5173'], 
