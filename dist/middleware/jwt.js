@@ -9,7 +9,7 @@ const path_1 = require("path");
 dotenv_1.default.config({ path: (0, path_1.join)('./src', './env') });
 const generateRefreshToken = (payload) => {
     return new Promise((resolve, reject) => {
-        // ✅ Use plain string, TypeScript now accepts it safely
+        // ✅ Use plain string, TypeScript now accepts it  safely
         const options = { expiresIn: '1d' };
         jsonwebtoken_1.default.sign(payload, process.env.REFRESH_TOKEN_SECRET, options, (err, refreshToken) => {
             if (err) {

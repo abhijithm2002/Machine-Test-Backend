@@ -20,7 +20,7 @@ const socket_1 = require("./Socket/socket");
 dotenv_1.default.config();
 (0, db_1.default)();
 const app = (0, express_1.default)();
-const server = (0, http_1.createServer)(app); // HTTP server setup
+const server = (0, http_1.createServer)(app);
 const corsOptions = {
     origin: ['https://doc-now-client.vercel.app', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
