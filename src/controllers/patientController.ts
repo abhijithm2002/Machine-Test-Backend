@@ -24,6 +24,7 @@ export default class patientController implements IpatientController {
    
     try {
       const { name, email, mobile, address, gender, password, photo, is_verified, role } = req.body;
+        console.log('body', req.body)
       const hashedPassword = await bcrypt.hash(password, 10);
       const data = { name, email, address, mobile, gender, password: hashedPassword, photo, role };
       const userData = await this._patientService.signupPatient(data);

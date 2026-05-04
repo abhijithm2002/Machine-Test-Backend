@@ -30,6 +30,7 @@ class patientController {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const { name, email, mobile, address, gender, password, photo, is_verified, role } = req.body;
+                console.log('body', req.body);
                 const hashedPassword = yield bcrypt_1.default.hash(password, 10);
                 const data = { name, email, address, mobile, gender, password: hashedPassword, photo, role };
                 const userData = yield this._patientService.signupPatient(data);
