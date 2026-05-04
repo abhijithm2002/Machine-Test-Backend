@@ -22,7 +22,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const server = (0, http_1.createServer)(app);
 const corsOptions = {
-    origin: ['https://doc-now-client.vercel.app', 'http://localhost:5173'],
+    origin: ['machine-test-frontend-eight.vercel.app', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     credentials: true,
 };
